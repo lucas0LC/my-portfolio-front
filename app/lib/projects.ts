@@ -48,7 +48,7 @@ async function processProjectData(projectData: JsonApiResponse<Project | Project
 
 export async function getProjects(lang?: string): Promise<ProcessedProject[]> {
   const endpointLangPrefix = lang === idioma.defaultLocale ? '' : `/${lang}`;
-  const endpoint = `${endpointLangPrefix}/jsonapi/node/projeto?include=${PROJECTS_INCLUDES}&filter[langcode]=${lang}&sort=-created`;
+  const endpoint = `${endpointLangPrefix}/jsonapi/node/projeto?include=${PROJECTS_INCLUDES}&sort=-created`;
 
   const drupalData = await fetchDrupalData<JsonApiResponse<Project[]>>(endpoint);
   
@@ -67,7 +67,7 @@ export async function getProjectBySlug(slug: string, lang?: string): Promise<Pro
   if (!projectUuid) return null;
 
   const endpointLangPrefix = lang === idioma.defaultLocale ? '' : `/${lang}`;
-  const endpoint = `${endpointLangPrefix}/jsonapi/node/projeto/${projectUuid}?include=${PROJECTS_INCLUDES}&filter[langcode]=${lang}`;
+  const endpoint = `${endpointLangPrefix}/jsonapi/node/projeto/${projectUuid}?include=${PROJECTS_INCLUDES}`;
 
   const drupalData = await fetchDrupalData<JsonApiResponse<Project>>(endpoint);
   

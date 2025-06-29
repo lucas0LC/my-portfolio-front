@@ -4,21 +4,20 @@ import { motion } from 'framer-motion';
 import { Linkedin, Github, Mail } from 'lucide-react';
 import Link from 'next/link';
 
-// Defina seus links aqui para fácil manutenção
 const contactLinks = [
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/seu-usuario/', // <-- SUBSTITUA PELO SEU LINK
+    href: 'https://www.linkedin.com/in/lucas-correia-2ba10b274/',
     icon: Linkedin,
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/seu-usuario', // <-- SUBSTITUA PELO SEU LINK
+    href: 'https://github.com/lucas0LC',
     icon: Github,
   },
   {
     name: 'Email',
-    href: 'mailto:seu-email@exemplo.com', // <-- SUBSTITUA PELO SEU EMAIL
+    href: 'lucascoreia123@gmail.com',
     icon: Mail,
   },
 ];
