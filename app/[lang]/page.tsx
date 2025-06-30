@@ -19,8 +19,8 @@ export default async function HomePage({ params: paramsPromise }: Props) {
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-2xl md:text-4xl font-extrabold text-slate-800 dark:text-slate-50 tracking-tight mb-4">
             {params.lang === 'en' 
-              ? <>Back-End Developer and Data Analyst <br></br><p className="text-xl md:text-2xl">Building the Infrastructure for Insights</p></>
-              : <>Desenvolvedor Back-End e Analista de Dados <br></br><p className="text-xl md:text-2xl">Construindo a Infraestrutura para Insights</p></>
+              ? <>Web Developer and Data Analyst <br></br><p className="text-xl md:text-2xl">Building the Infrastructure for Insights</p></>
+              : <>Desenvolvedor Web e Analista de Dados <br></br><p className="text-xl md:text-2xl">Construindo a Infraestrutura para Insights</p></>
             }
           </h1>
           <p className="text-lg md:text-xl text-slate-600 dark:text-slate-100 max-w-3xl mx-auto mb-8">

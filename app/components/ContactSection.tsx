@@ -17,7 +17,7 @@ const contactLinks = [
   },
   {
     name: 'Email',
-    href: 'lucascoreia123@gmail.com',
+    href: 'mailto:lucascoreia123@gmail.com',
     icon: Mail,
   },
 ];
